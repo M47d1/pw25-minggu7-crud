@@ -1,0 +1,265 @@
+/* ========== RESET DASAR & FONTS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ========== BODY STYLING UTAMA ========== */
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    overflow-x: hidden;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+    width: 200px;
+    background-color: #e0e0e0;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+/* ========== MENU HORIZONTAL (NAVBAR) ========== */
+.menu-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-left: 200px; /* To account for the sidebar */
+}
+
+.menu-top a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-top a:hover {
+    color: #4c8bea;
+}
+
+/* ========== KONTEN UTAMA (MAIN CONTENT) ========== */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+}
+
+/* ========== JUDUL HALAMAN ========== */
+h1, .title, h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ========== TABEL UMUM ========== */
+#jamaahTable, table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+#jamaahTable th,
+#jamaahTable td,
+table th,
+table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#jamaahTable th,
+table thead {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* ========== TOMBOL AKSI (EDIT, HAPUS) ========== */
+a.btn-edit,
+a.btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+a.btn-edit {
+    background-color: #28a745;
+}
+
+a.btn-edit:hover {
+    background-color: #218838;
+}
+
+a.btn-delete {
+    background-color: #357abd;
+}
+
+a.btn-delete:hover {
+    background-color: #357abd;
+}
+
+/* ========== TOMBOL FORM SUBMIT DAN KEMBALI ========== */
+.submit-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #4a90e2;
+    text-decoration: none;
+    border: 2px solid #4a90e2;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* === TOP MENU DI ATAS TABEL === */
+.top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(to right, #4a90e2, #357abd);
+    padding: 20px 0;
+    border-radius: 8px;
+    margin: 30px auto 50px auto;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== KONTAINER LOGIN ========== */
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
